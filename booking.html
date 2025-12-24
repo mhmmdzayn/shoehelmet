@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons/icon.ico">
+    <title>Layanan Cuci Sepatu dan Helm</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body background="">
+    <header style="margin-bottom: 30px">
+        <nav class="navbar">
+            <div class="nav-brand">ShoeHelmet.ID<span class="brand-dot">.</span></div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="daftarharga.html" class="nav-link active">Booking</a></li>
+                <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-social" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                <li id="dashboardLink" style="display: none;">
+                    <a href="dashboard.html" class="nav-link nav-link-admin">
+                        <i class="fas fa-chart-line"></i> Dashboard
+                    </a>
+                </li>
+              <a href="https://wa.me/6285881872733?text=Halo%20Admin%2C%20saya%20mau%20tanya%20tentang%20layanan%20cuci%20sepatu%20dan%20helm.%20Bisa%20minta%20daftar%20harganya%3F" aria-label="WhatsApp" target="_blank" class="social-icon">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 4.991l-.001.001h-.001zM12.004 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.524 5.84L0 24l6.337-1.663c1.711.932 3.673 1.463 5.761 1.463 6.631 0 12-5.369 12-12s-5.369-12-12-12z"/>
+                </svg>
+              </a>
+
+            <a href="https://www.instagram.com/shoehalmet/" aria-label="Instagram" target="_blank" class="social-icon">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.5-.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
+            </a>
+
+            <a href="mailto:pencuciansepatudanhelm@gmail.com" aria-label="Gmail" class="social-icon" target="_blank">
+               <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+              </svg>
+            </a>
+
+             <a href="login.html" class="login-btn" id="loginBtn">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                
+                <!-- User Profile -->
+                <div class="user-profile" id="userProfile">
+                    <div class="user-avatar" id="userAvatar"></div>
+                    <span class="user-name" id="userName"></span>
+                    <button class="logout-btn" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+        </div>
+       </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="booking-main">
+        <div class="booking-container">
+            <!-- Left Side - Form -->
+            <div class="booking-form-section">
+                <div class="form-header">
+                    <h1>Booking Layanan</h1>
+                    <p>Isi form di bawah untuk memesan layanan cuci sepatu atau helm</p>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Customer Info -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Informasi Pelanggan</h3>
+                        
+                        <div class="form-group">
+                            <label for="customerName">Nama Lengkap *</label>
+                            <input type="text" id="customerName" required placeholder="Masukkan nama lengkap">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerEmail">Email *</label>
+                                <input type="email" id="customerEmail" required placeholder="contoh@email.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerPhone">No. WhatsApp *</label>
+                                <input type="tel" id="customerPhone" required placeholder="08xxxxxxxxxx">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerAddress">Alamat Lengkap *</label>
+                            <textarea id="customerAddress" rows="3" required placeholder="Jl. Contoh No. 123, Kelurahan, Kecamatan"></textarea>
+                            <span class="error-message" id="addressError"></span>
+                        </div>
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-concierge-bell"></i> Pilih Layanan</h3>
+                        
+                        <div class="form-group">
+                            <label for="itemType">Jenis Item *</label>
+                            <select id="itemType" required>
+                                <option value="">-- Pilih Jenis Item --</option>
+                                <option value="sepatu">Sepatu</option>
+                                <option value="helm">Helm</option>
+                            </select>
+                            <span class="error-message" id="itemTypeError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Jenis Layanan *</label>
+                            <select id="serviceType" required>
+                                <option value="">-- Pilih Layanan --</option>
+                                <option value="deep-cleaning" data-price="35000">Deep Cleaning - Rp 35.000</option>
+                                <option value="fast-cleaning" data-price="45000">Fast Cleaning (3 Jam) - Rp 45.000</option>
+                                <option value="unyellowing" data-price="50000">Unyellowing - Rp 50.000</option>
+                                <option value="repaint" data-price="75000">Recolor/Repaint - Rp 75.000</option>
+                                <option value="water-repellent" data-price="30000">Water Repellent - Rp 30.000</option>
+                                <option value="premium-package" data-price="100000">Premium Package - Rp 100.000</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">Jumlah Item *</label>
+                                <input type="number" id="quantity" min="1" value="1" required>
+                                <span class="error-message" id="quantityError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pickupDate">Tanggal Pickup *</label>
+                                <input type="date" id="pickupDate" required>
+                                <span class="error-message" id="dateError"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Options -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-plus-circle"></i> Opsi Tambahan</h3>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="pickupService" value="15000">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    <strong>Layanan Antar Jemput</strong>
+                                    <small>+ Rp 15.000</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="expressService" value="25000">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    <strong>Express Service (Selesai dalam 1 hari)</strong>
+                                    <small>+ Rp 25.000</small>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Catatan Tambahan</label>
+                            <textarea id="notes" rows="3" placeholder="Contoh: Ada noda membandel di bagian sol, warna biru muda, dll"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-check-circle"></i> Konfirmasi Booking
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Side - Summary -->
+            <div class="booking-summary-section">
+                <div class="summary-card sticky">
+                    <h3>Ringkasan Pesanan</h3>
+                    
+                    <div class="summary-item">
+                        <span>Jenis Item:</span>
+                        <strong id="summaryItemType">-</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Layanan:</span>
+                        <strong id="summaryService">-</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Jumlah:</span>
+                        <strong id="summaryQuantity">0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Tanggal Pickup:</span>
+                        <strong id="summaryDate">-</strong>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-breakdown">
+                        <div class="breakdown-item">
+                            <span>Harga Layanan:</span>
+                            <span id="summaryServicePrice">Rp 0</span>
+                        </div>
+
+                        <div class="breakdown-item" id="pickupPriceRow" style="display: none;">
+                            <span>Antar Jemput:</span>
+                            <span>Rp 15.000</span>
+                        </div>
+
+                        <div class="breakdown-item" id="expressPriceRow" style="display: none;">
+                            <span>Express Service:</span>
+                            <span>Rp 25.000</span>
+                        </div>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-total">
+                        <span>Total Pembayaran:</span>
+                        <strong id="summaryTotal">Rp 0</strong>
+                    </div>
+
+                    <div class="summary-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Pembayaran dapat dilakukan saat pengambilan atau via transfer setelah konfirmasi admin</p>
+                    </div>
+
+                    <div class="summary-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garansi Kualitas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Tepat Waktu</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Aman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Berhasil!</h2>
+            <p>Terima kasih telah memesan layanan kami.</p>
+            <p class="modal-order-id">Order ID: <strong id="modalOrderId"></strong></p>
+            <p class="modal-info">Kami akan segera menghubungi Anda melalui WhatsApp untuk konfirmasi lebih lanjut.</p>
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="redirectToHome()">
+                    <i class="fas fa-home"></i> Kembali ke Home
+                </button>
+                <a href="#" class="btn btn-secondary" id="whatsappBtn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<footer>
+<div class="footer-container">
+<div class="footer-left">
+    <h2>ShoeHelmet.ID</h2>
+    <p>
+    Layanan cuci sepatu dan helm profesional dengan teknologi deep clean. Kami jemput kotor, kami antar bersih seperti baru.<br>
+    innovative solutions for our customers<br>
+    worldwide.
+    </p>
+    <div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+
+<div class="footer-right">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>© 2025 ShoeHelmet.ID. All rights reserved.</p>
+</div>
+</footer>
+</main>
+<script src="script.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

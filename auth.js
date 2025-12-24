@@ -9,15 +9,19 @@ class AuthSystem {
             const defaultUsers = [
                 {
                     id: 1,
-                    name: 'Demo User',
-                    email: 'demo@shoehelmet.id',
-                    password: 'demo123'
+                    name: 'Admin ShoeHelmet',
+                    email: 'zeinsiadmin@gmail.com',
+                    password: 'admin123',
+                    role: 'admin',
+                    registeredAt: new Date().toISOString()
                 },
                 {
                     id: 2,
-                    name: 'Admin ShoeHelmet',
-                    email: 'admin@shoehelmet.id',
-                    password: 'admin123'
+                    name: 'Demo User',
+                    email: 'demo@shoehelmet.id',
+                    password: 'demo123',
+                    role: 'user',
+                    registeredAt: new Date().toISOString()
                 }
             ];
             localStorage.setItem('users', JSON.stringify(defaultUsers));
@@ -87,11 +91,18 @@ class AuthSystem {
             const userSession = {
                 id: user.id,
                 name: user.name,
-                email: user.email
+                email: user.email,
+                role: user.role || 'user'
             };
             localStorage.setItem('currentUser', JSON.stringify(userSession));
+            
             alert('Login berhasil! Selamat datang ' + user.name);
-            window.location.href = 'index.html';
+            
+            if (user.role === 'admin') {
+                window.location.href = 'dashboard.html';
+            } else {
+                window.location.href = 'index.html';
+            }
         } else {
             document.getElementById('loginEmailError').textContent = 'Email atau password salah';
         }
@@ -141,7 +152,9 @@ class AuthSystem {
             id: Date.now(),
             name: name,
             email: email,
-            password: password
+            password: password,
+            role: 'user',
+            registeredAt: new Date().toISOString()
         };
 
         users.push(newUser);
@@ -150,7 +163,8 @@ class AuthSystem {
         const userSession = {
             id: newUser.id,
             name: newUser.name,
-            email: newUser.email
+            email: newUser.email,
+            role: 'user'
         };
         localStorage.setItem('currentUser', JSON.stringify(userSession));
 

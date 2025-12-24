@@ -7,7 +7,7 @@
     <title>Layanan Cuci Sepatu dan Helm</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body background="">
     <header>
@@ -15,11 +15,17 @@
             <div class="nav-brand">ShoeHelmet.ID<span class="brand-dot">.</span></div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="daftarharga.html" class="nav-link">Daftar Harga</a></li>
+                <li><a href="daftarharga.html" class="nav-link">Booking</a></li>
                 <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            
             <div class="nav-social" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+              <li id="dashboardLink" style="display: none;">
+                    <a href="dashboard.html" class="nav-link nav-link-admin">
+                        <i class="fas fa-chart-line"></i> Dashboard
+                    </a>
+                </li>
               <a href="https://wa.me/6285881872733?text=Halo%20Admin%2C%20saya%20mau%20tanya%20tentang%20layanan%20cuci%20sepatu%20dan%20helm.%20Bisa%20minta%20daftar%20harganya%3F" aria-label="WhatsApp" target="_blank" class="social-icon">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 4.991l-.001.001h-.001zM12.004 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.524 5.84L0 24l6.337-1.663c1.711.932 3.673 1.463 5.761 1.463 6.631 0 12-5.369 12-12s-5.369-12-12-12z"/>
