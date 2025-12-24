@@ -196,7 +196,6 @@ body {
     background: #ff5252;
 }
 
-/* Dashboard Content */
 .dashboard-content {
     flex: 1;
     padding: 30px;
@@ -616,4 +615,5 @@ body {
         padding: 20px;
     }
 }
+
 
