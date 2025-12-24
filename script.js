@@ -7,17 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     images.forEach(img => {
     img.onclick = function() {
-            modal.style.display = "flex"; // Tampilkan modal
-         modalImg.src = this.src;      // Masukkan foto yang diklik ke modal
+            modal.style.display = "flex"; 
+         modalImg.src = this.src;     
         }
     });
 
-    // Tutup modal saat tombol 'x' diklik
     closeBtn.onclick = function() {
         modal.style.display = "none";
     }
 
-// Tutup modal saat area hitam diklik
     modal.onclick = function(e) {
         if (e.target !== modalImg) {
             modal.style.display = "none";
@@ -26,11 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (scheduleButton) {
         scheduleButton.addEventListener('click', function() {
-            // Logika saat tombol diklik.
-            // Di sini, kita bisa mengarahkan ke halaman pemesanan atau menampilkan pop-up.
-            
-            // Contoh: Mengarahkan ke WhatsApp (Ganti nomor dengan nomor bisnis Anda)
-            const phoneNumber = '6281234567890'; // Contoh: Ganti dengan nomor WhatsApp
+        
+            const phoneNumber = '6281234567890'; 
             const message = 'Halo ShoeHelmet.id, saya ingin menjadwalkan cuci sepatu. Mohon informasinya.';
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             
@@ -40,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Anda akan diarahkan ke WhatsApp untuk menjadwalkan layanan.');
         });
     }
-    // JS untuk menambahkan efek active pada menu saat di-scroll (Jika ingin lebih lanjut)
+    
     const sections = document.querySelectorAll('section, main');
     const navLinks = document.querySelectorAll('nav a');
 
