@@ -1,5 +1,3 @@
-/* CSS Variables */
-
 :root {
     --bg-primary: #0a0a0a;
     --bg-secondary: #111111;
@@ -15,7 +13,7 @@
     --shadow-glow: 0 0 60px rgba(0, 212, 255, 0.15);
     --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
     --bg-dark: #0a0a0a;
-    --accent-green: #758E61; /* Warna hijau dari desainmu */
+    --accent-green: #758E61;
     --text-gray: #a0a0a0;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.4);
@@ -28,7 +26,6 @@
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
-/* Navigation Link Admin Highlight */
 .nav-link-admin {
     background: rgba(95, 155, 106, 0.1) !important;
     color: #5f9b6a !important;
@@ -39,7 +36,6 @@
     background: rgba(95, 155, 106, 0.2) !important;
 }
 
-/* Enhanced User Profile in Navbar */
 .user-info {
     display: flex;
     flex-direction: column;
@@ -187,7 +183,6 @@ body {
     padding: 0 2rem;
 }
 
-/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -205,7 +200,6 @@ body {
     background: var(--accent-gradient-hover);
 }
 
-/* Enhanced Header */
 header {
     position: fixed;
     top: 0;
@@ -359,7 +353,6 @@ header.scrolled {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Sections */
 .section {
     min-height: 100vh;
     display: flex;
@@ -391,7 +384,6 @@ header.scrolled {
     border-radius: 2px;
 }
 
-/* Enhanced Home Section */
 .home {
     background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
     position: relative;
@@ -613,7 +605,6 @@ header.scrolled {
     color: white;
 }
 
-/* Enhanced Home Image */
 .home-image {
     position: relative;
     display: flex;
@@ -682,7 +673,6 @@ header.scrolled {
     animation-delay: 3s;
 }
 
-/* Enhanced About Section */
 .about {
     background: var(--bg-secondary);
     position: relative;
@@ -845,7 +835,6 @@ header.scrolled {
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -894,7 +883,7 @@ header.scrolled {
         opacity: 0;
     }
 }
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 1.5rem;
@@ -1107,7 +1096,6 @@ header.scrolled {
     }
 }
 
-/* Skills Section */
 .skills {
     background: var(--bg-primary);
     position: relative;
@@ -1214,7 +1202,6 @@ header.scrolled {
     transition: width 1s ease;
 }
 
-/* Services Section */
 .services {
     background: var(--bg-secondary);
     position: relative;
@@ -1320,7 +1307,6 @@ header.scrolled {
     font-weight: 500;
 }
 
-/* Projects Section */
 .projects {
     background: var(--bg-primary);
     position: relative;
@@ -1454,7 +1440,6 @@ header.scrolled {
     font-weight: 500;
 }
 
-/* Contact Section */
 .section-contact {
     padding: 60px 20px;
     background-color: rgba;
@@ -1489,7 +1474,6 @@ header.scrolled {
     gap: 40px;
 }
 
-/* Sidebar Info */
 .info-group h2, .contact-main h2 {
     font-size: 1.3rem;
     margin-bottom: 25px;
@@ -1529,7 +1513,6 @@ header.scrolled {
     margin: 3px 0 0 0;
 }
 
-/* Map */
 .map-container h3 {
     font-size: 1.1rem;
     margin: 20px 0 15px;
@@ -1565,7 +1548,6 @@ header.scrolled {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Form */
 .form-card {
     background: rgba;
     padding: 30px;
@@ -1623,7 +1605,6 @@ header.scrolled {
     margin-top: 15px;
 }
 
-/* FAQ Mini */
 .faq-mini {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1655,7 +1636,6 @@ header.scrolled {
     margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -1820,7 +1800,6 @@ header.scrolled {
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
 }
 
-/* Responsive Updates */
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr;
@@ -1886,7 +1865,7 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* kiri - kanan rata */
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -1947,7 +1926,6 @@ body { background-color: #0a0a0a; color: white; }
             color: #5d7c5a;
         }
 
-        /* Hero Image Container */
         .image-card {
             background-color: #e5e7eb;
             border-radius: 40px;
@@ -1955,7 +1933,6 @@ body { background-color: #0a0a0a; color: white; }
             overflow: visible;
         }
 
-        /* Floating Tags */
         .floating-tag {
             background: rgba(10, 10, 10, 0.7);
             backdrop-filter: blur(8px);
@@ -1971,7 +1948,6 @@ body { background-color: #0a0a0a; color: white; }
 
         footer { background: #0a0a0a; border-top: 1px solid rgba(255,255,255,0.05); }
 
-/* Mengatur Grid Galeri */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1981,7 +1957,7 @@ body { background-color: #0a0a0a; color: white; }
 .gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Agar foto tidak gepeng */
+    object-fit: cover; 
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -1992,9 +1968,8 @@ body { background-color: #0a0a0a; color: white; }
     filter: brightness(80%);
 }
 
-/* Styling Modal (Layar Full) */
 .modal {
-    display: none; /* Sembunyi secara default */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
